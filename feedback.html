@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Feedback - FAA Library</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+   body {
+  margin: 0;
+  font-family: 'Cormorant Garamond', serif;
+  background-color: #a73a55;
+  background-image: url('images/background-pattern.webp'); 
+  background-repeat: repeat;
+  background-size: auto;
+  background-attachment: scroll;
+  color: #4a0e29;
+}
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      border-bottom: 1px solid #c8aab4;
+    }
+
+    .owner-info {
+      display: flex;
+      align-items: center;
+    }
+
+    .owner-info img {
+      width: 50px;
+      height: 50px;
+      border-radius: 8px;
+      margin-right: 10px;
+    }
+
+    .logo {
+      text-align: center;
+      flex: 1;
+    }
+
+        .library-name {
+     font-size: 24px;
+     color: #800020;
+     margin-top: 10px;
+     font-weight: bold;
+     letter-spacing: 1px;
+     text-align: center;
+    }
+
+    nav {
+      text-align: center;
+      background-color: #3a0a1e;
+      padding: 15px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 20px;
+      color: #fce9f1;
+      border-bottom: 2px solid transparent;
+      transition: border-bottom 0.3s ease, color 0.3s ease;
+    }
+
+    nav a:hover {
+      border-bottom: 2px solid #e0a4c3;
+      color: #ffe6f1;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #fff7f9;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    label {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    input, textarea, select {
+      padding: 12px;
+      font-size: 18px;
+      border: 1px solid #caaac0;
+      border-radius: 10px;
+      font-family: 'Cormorant Garamond', serif;
+      background-color: #fff;
+      transition: box-shadow 0.3s;
+    }
+
+    input:focus, textarea:focus, select:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px #eecae0;
+    }
+
+    button {
+      padding: 12px 25px;
+      font-size: 20px;
+      color: white;
+      background-color: #8d2c51;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #a23a65;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #7b294e;
+      padding: 20px;
+      border-top: 1px solid #c8aab4;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="owner-info">
+    <img src="owner.jpg" alt="Owner Image">
+    <div>Nor Fatihah Binti Eshad</div>
+  </div>
+  <div class="logo">
+    <img src="logo.png" alt="FAA Library Logo" style="height: 80px;">
+    <div class="library-name">FAA LIBRARY</div>
+  </div>
+  <div style="width: 110px;"></div>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="explore.html">Explore Artwork 🎨</a>
+  <a href="tutorials.html">Art Tutorials 📚</a>
+  <a href="contact.html">Contact Us ✉️</a>
+  <a href="about.html">About Me 👩‍🎨</a>
+  <a href="feedback.html">Feedback</a>
+  <a href="workshop-booking.html">Workshop 📅</a>
+  <a href="sitemap.html">🗺️ Sitemap</a>
+</nav>
+
+
+<main>
+  <h2>📝 We Value Your Feedback</h2>
+  <form action="#" method="post">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="email">Your Email</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="topic">Topic</label>
+    <select id="topic" name="topic">
+      <option value="website">Website Design</option>
+      <option value="content">Tutorial Content</option>
+      <option value="suggestion">Suggestions</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="message">Your Feedback</label>
+    <textarea id="message" name="message" rows="6" placeholder="Write your thoughts here..." required></textarea>
+
+    <button type="submit">Submit Feedback</button>
+  </form>
+</main>
+
+<footer>
+  <p>Website created: <strong>April 2025</strong> | Last updated: <strong>24 May 2025</strong></p>
+  &copy; 2025 Nor Fatihah Binti Eshad. All rights reserved.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Drawing Emotions - FAA Library</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+   body {
+  margin: 0;
+  font-family: 'Cormorant Garamond', serif;
+  background-color: #a73a55;
+  background-image: url('images/background-pattern.webp'); 
+  background-repeat: repeat;
+  background-size: auto;
+  background-attachment: scroll;
+  color: #4a0e29;
+}
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      border-bottom: 1px solid #c8aab4;
+    }
+
+    .owner-info {
+      display: flex;
+      align-items: center;
+    }
+
+    .owner-info img {
+      width: 50px;
+      height: 50px;
+      border-radius: 8px;
+      margin-right: 10px;
+    }
+
+    .logo {
+      text-align: center;
+      flex: 1;
+    }
+
+    nav {
+      text-align: center;
+      background-color: #3a0a1e;
+      padding: 15px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 20px;
+      color: #fce9f1;
+      border-bottom: 2px solid transparent;
+      transition: border-bottom 0.3s ease, color 0.3s ease;
+    }
+
+    nav a:hover {
+      border-bottom: 2px solid #e0a4c3;
+      color: #ffe6f1;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    main h2 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 20px;
+      animation: fadeIn 1.2s ease-out;
+    }
+
+    .tutorial-cover {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      animation: zoomIn 1.2s ease-out;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h3 {
+      font-size: 26px;
+      color: #3a0a1e;
+      margin-bottom: 10px;
+    }
+
+    p, ul {
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    .tips {
+      background-color: #fff7f9;
+      border-left: 5px solid #d39aa8;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+
+    .tips h4 {
+      margin-top: 0;
+      color: #7b294e;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #7b294e;
+      padding: 20px;
+      border-top: 1px solid #c8aab4;
+      margin-top: 40px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes zoomIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="owner-info">
+    <img src="owner.jpg" alt="Owner Image">
+    <div>Nor Fatihah Binti Eshad</div>
+  </div>
+  <div class="logo">
+    <img src="logo.png" alt="FAA Library Logo" style="height: 80px;">
+    <div class="library-name">FAA LIBRARY</div>
+  </div>
+  <div style="width: 110px;"></div>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="explore.html">Explore Artwork 🎨</a>
+  <a href="tutorials.html">Art Tutorials 📚</a>
+  <a href="contact.html">Contact Us ✉️</a>
+  <a href="about.html">About Me 👩‍🎨</a>
+  <a href="feedback.html">Feedback</a>
+  <a href="workshop-booking.html">Workshop 📅</a>
+</nav>
+
+
+<main>
+  <h2>💭 Drawing Emotions</h2>
+
+  <section>
+    <h3>Why Emotions Matter in Art</h3>
+    <p>Capturing emotion transforms a simple sketch into a powerful story. Whether it's sadness, joy, anger, or fear—conveying feeling through facial expression and body language helps connect your art with the viewer.</p>
+  </section>
+
+  <section>
+    <h3>Key Facial Features</h3>
+    <ul>
+      <li><strong>Eyes:</strong> Squinted, widened, teary, or sparkling—eyes are central to emotion.</li>
+      <li><strong>Eyebrows:</strong> Tilted, arched, or furrowed eyebrows can dramatically change expression.</li>
+      <li><strong>Mouth:</strong> Curved smiles, trembling lips, or tight grimaces all reveal different moods.</li>
+      <li><strong>Head Tilt:</strong> A small head angle can imply uncertainty, shyness, or dominance.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Body Language</h3>
+    <p>Emotion is not just in the face. Pay attention to posture and gesture:</p>
+    <ul>
+      <li>Slumped shoulders for sadness or fatigue</li>
+      <li>Fists clenched or crossed arms for anger or defense</li>
+      <li>Open arms or leaned-in posture for excitement or openness</li>
+    </ul>
+  </section>
+
+  <section class="tips">
+    <h4>🎭 Emotion Drawing Tips for Students</h4>
+    <ul>
+      <li>Use a mirror or video reference to study your own expressions.</li>
+      <li>Simplify emotions into thumbnails before finalizing your sketch.</li>
+      <li>Study animated films—they exaggerate emotions very clearly.</li>
+      <li>Practice drawing the same face with different emotional cues.</li>
+      <li>Use subtle shading around eyes, cheeks, and mouth to enhance realism.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Practice Challenge 🎨</h3>
+    <p>Draw four facial expressions: joy, anger, sadness, and surprise—using the same character. Focus on eyebrows, eyes, and mouth while keeping the face structure consistent.</p>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Nor Fatihah Binti Eshad. All rights reserved.
+</footer>
+
+</body>
+</html>

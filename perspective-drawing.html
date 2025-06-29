@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Perspective Drawing - FAA Library</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+   body {
+  margin: 0;
+  font-family: 'Cormorant Garamond', serif;
+  background-color: #a73a55;
+  background-image: url('images/background-pattern.webp'); 
+  background-repeat: repeat;
+  background-size: auto;
+  background-attachment: scroll;
+  color: #4a0e29;
+}
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      border-bottom: 1px solid #c8aab4;
+    }
+
+    .owner-info {
+      display: flex;
+      align-items: center;
+    }
+
+    .owner-info img {
+      width: 50px;
+      height: 50px;
+      border-radius: 8px;
+      margin-right: 10px;
+    }
+
+    .logo {
+      text-align: center;
+      flex: 1;
+    }
+
+    nav {
+      text-align: center;
+      background-color: #3a0a1e;
+      padding: 15px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 20px;
+      color: #fce9f1;
+      border-bottom: 2px solid transparent;
+      transition: border-bottom 0.3s ease, color 0.3s ease;
+    }
+
+    nav a:hover {
+      border-bottom: 2px solid #e0a4c3;
+      color: #ffe6f1;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    main h2 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 20px;
+      animation: fadeIn 1.2s ease-out;
+    }
+
+    .tutorial-cover {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      animation: zoomIn 1.2s ease-out;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h3 {
+      font-size: 26px;
+      color: #3a0a1e;
+      margin-bottom: 10px;
+    }
+
+    p, ul {
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    .tips {
+      background-color: #fff7f9;
+      border-left: 5px solid #d39aa8;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+
+    .tips h4 {
+      margin-top: 0;
+      color: #7b294e;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #7b294e;
+      padding: 20px;
+      border-top: 1px solid #c8aab4;
+      margin-top: 40px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes zoomIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="owner-info">
+    <img src="owner.jpg" alt="Owner Image">
+    <div>Nor Fatihah Binti Eshad</div>
+  </div>
+  <div class="logo">
+    <img src="logo.png" alt="FAA Library Logo" style="height: 80px;">
+    <div class="library-name">FAA LIBRARY</div>
+  </div>
+  <div style="width: 110px;"></div>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="explore.html">Explore Artwork 🎨</a>
+  <a href="tutorials.html">Art Tutorials 📚</a>
+  <a href="contact.html">Contact Us ✉️</a>
+  <a href="about.html">About Me 👩‍🎨</a>
+  <a href="feedback.html">Feedback</a>
+  <a href="workshop-booking.html">Workshop 📅</a>
+</nav>
+
+
+<main>
+  <h2>📐 Perspective Drawing</h2>
+
+  <section>
+    <h3>Introduction</h3>
+    <p>Mastering perspective is essential for creating realistic and spatially accurate drawings. Whether you're illustrating architecture or natural landscapes, perspective helps establish depth and form.</p>
+  </section>
+
+  <section>
+    <h3>Types of Perspective</h3>
+    <ul>
+      <li><strong>One-Point Perspective:</strong> Commonly used in road or hallway scenes, all lines converge at a single vanishing point.</li>
+      <li><strong>Two-Point Perspective:</strong> Ideal for corner views, where two sets of lines vanish in different directions.</li>
+      <li><strong>Three-Point Perspective:</strong> Used for extreme views, like looking up at a skyscraper or down from above.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Materials You'll Need</h3>
+    <ul>
+      <li>Pencils (2H, HB)</li>
+      <li>Ruler (for accurate lines)</li>
+      <li>Eraser and sharpener</li>
+      <li>Sketchbook or drawing paper</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Step-by-Step Exercise</h3>
+    <p>Try drawing a one-point perspective room:</p>
+    <ul>
+      <li>Draw a horizon line and choose a vanishing point.</li>
+      <li>Create a rectangle for the back wall.</li>
+      <li>Connect the corners to the vanishing point to form the room.</li>
+      <li>Add furniture using the same vanishing logic.</li>
+    </ul>
+  </section>
+
+  <section class="tips">
+    <h4>🔍 Perspective Tips for University Students:</h4>
+    <ul>
+      <li>Always start with light lines for guides—you’ll erase many of them later.</li>
+      <li>Use thumbnails to experiment with angles and scenes quickly.</li>
+      <li>Practice drawing everyday scenes: a café, a hallway, or your desk!</li>
+      <li>Study how shadows follow the rules of perspective too.</li>
+      <li>Observe buildings and sketch them outdoors to train your eyes.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Challenge Yourself 🎯</h3>
+    <p>Design your dream room using two-point perspective. Include elements like windows, shelves, and a cozy corner. Add shading to enhance volume.</p>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Nor Fatihah Binti Eshad. All rights reserved.
+</footer>
+
+</body>
+</html>

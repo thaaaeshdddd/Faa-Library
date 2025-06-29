@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Explore Artworks - FAA Library</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+   body {
+  margin: 0;
+  font-family: 'Cormorant Garamond', serif;
+  background-color: #a73a55;
+  background-image: url('images/background-pattern.webp'); 
+  background-repeat: repeat;
+  background-size: auto;
+  background-attachment: scroll;
+  color: #4a0e29;
+}
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      border-bottom: 1px solid #c8aab4;
+    }
+
+    .owner-info {
+      display: flex;
+      align-items: center;
+    }
+
+    .owner-info img {
+      width: 50px;
+      height: 50px;
+      border-radius: 8px;
+      margin-right: 10px;
+    }
+
+    .logo {
+      text-align: center;
+      flex: 1;
+      font-size: 32px;
+      font-weight: 600;
+    }
+
+    nav {
+      text-align: center;
+      background-color: #3a0a1e;
+      padding: 15px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 20px;
+      color: #fce9f1;
+      border-bottom: 2px solid transparent;
+      transition: border-bottom 0.3s ease, color 0.3s ease;
+    }
+
+    nav a:hover {
+      border-bottom: 2px solid #e0a4c3;
+      color: #ffe6f1;
+    }
+
+    main {
+      padding: 40px;
+      text-align: center;
+    }
+
+    .artwork-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .artwork-box {
+      background-color: #ffffff;
+      border: 1px solid #d4b9be;
+      border-radius: 10px;
+      width: 300px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .artwork-box img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .artwork-box h3 {
+      margin: 15px 0 10px;
+      font-size: 22px;
+    }
+
+    .artwork-box p {
+      font-size: 16px;
+    }
+
+    .artwork-box a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #4a0e29;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #7b294e;
+      padding: 20px;
+      border-top: 1px solid #c8aab4;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="owner-info">
+    <img src="owner.jpg" alt="Owner Image">
+    <div>Nor Fatihah Binti Eshad</div>
+  </div>
+  <div class="logo">
+    <img src="logo.png" alt="FAA Library Logo" style="height: 80px;">
+    <div class="library-name">FAA LIBRARY</div>
+  </div>
+  <div style="width: 110px;"></div>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="explore.html">Explore Artwork 🎨</a>
+  <a href="tutorials.html">Art Tutorials 📚</a>
+  <a href="contact.html">Contact Us ✉️</a>
+  <a href="about.html">About Me 👩‍🎨</a>
+  <a href="feedback.html">Feedback</a>
+  <a href="workshop-booking.html">Workshop 📅</a>
+  <a href="sitemap.html">🗺️ Sitemap</a>
+</nav>
+
+
+<main>
+  <!-- PAINTINGS -->
+  <h3 style="margin-top: 50px; font-size: 28px;">🖼️ Paintings</h3>
+  <div class="artwork-grid">
+    <div class="artwork-box">
+      <img src="images/starry-night.jpg" alt="Starry Night">
+      <h3>Starry Night</h3>
+      <p>Swirling sky filled with emotion and energy.</p>
+      <a href="starry-night.html">View Artwork</a>
+    </div>
+    <div class="artwork-box">
+      <img src="images/persistence-of-memory.jpg" alt="Persistence of Memory">
+      <h3>Persistence of Memory</h3>
+      <p>Surreal clocks melting through dream-like space.</p>
+      <a href="persistence-of-memory.html">View Artwork</a>
+    </div>
+    <div class="artwork-box">
+      <img src="images/the-scream.jpg" alt="The Scream">
+      <h3>The Scream</h3>
+      <p>A haunting expression of raw emotion and anxiety.</p>
+      <a href="the-scream.html">View Artwork</a>
+    </div>
+    <div class="artwork-box">
+      <img src="images/girl-with-pearl-earring.jpg" alt="Girl with a Pearl Earring">
+      <h3>Girl with a Pearl Earring</h3>
+      <p>Soft, mysterious portrait by Vermeer.</p>
+      <a href="girl-with-pearl-earring.html">View Artwork</a>
+    </div>
+    <div class="artwork-box">
+      <img src="images/water-lilies.jpg" alt="Water Lilies">
+      <h3>Water Lilies</h3>
+      <p>Serene garden reflections by Monet.</p>
+      <a href="water-lilies.html">View Artwork</a>
+    </div>
+    <div class="artwork-box">
+      <img src="images/composition-viii.jpg" alt="Composition VIII">
+      <h3>Composition VIII</h3>
+      <p>Energetic mix of abstract forms and lines.</p>
+      <a href="composition-viii.html">View Artwork</a>
+    </div>
+  </div>
+
+  <!-- SCULPTURE -->
+  <h3 style="margin-top: 60px; font-size: 28px;">🗿 Sculpture</h3>
+  <div class="artwork-grid">
+    <div class="artwork-box">
+      <img src="images/david.jpg" alt="David">
+      <h3>David</h3>
+      <p>Michelangelo’s Renaissance masterpiece in marble.</p>
+      <a href="david.html">View Sculpture</a>
+    </div>
+    <div class="artwork-box">
+      <img src="images/penang-cat.jpg" alt="Penang Cat Sculpture">
+      <h3>Penang Cat Sculpture</h3>
+      <p>A charming cat statue from George Town, Penang, representing local street art culture.</p>
+      <a href="penang-cat.html">View Sculpture</a>
+    </div>
+    <div class="artwork-box">
+       <img src="images/kinabalu-hand.jpg" alt="Kinabalu Hand Sculpture">
+     <h3>Kinabalu Hand Sculpture</h3>
+     <p>Modern sculpture located in Sabah, symbolizing strength and unity.</p>
+     <a href="kinabalu-hand.html">View Sculpture</a>
+</div>
+
+
+  <!-- PHOTOGRAPHY -->
+  <h3 style="margin-top: 60px; font-size: 28px;">📸 Photography</h3>
+  <div class="artwork-grid">
+    <div class="artwork-box">
+      <img src="images/migrant-mother.jpg" alt="Migrant Mother">
+      <h3>Migrant Mother</h3>
+      <p>Powerful photo by Dorothea Lange during the Depression.</p>
+      <a href="migrant-mother.html">View Photo</a>
+    </div>
+    <div class="artwork-box">
+      <img src="images/moonrise.jpg" alt="Moonrise over Hernandez">
+      <h3>Moonrise over Hernandez</h3>
+      <p>Stunning landscape by Ansel Adams.</p>
+      <a href="moonrise.html">View Photo</a>
+    </div>
+    <div class="artwork-box">
+     <img src="images/girl-afghan.jpg" alt="Afghan Girl">
+     <h3>Afghan Girl</h3>
+     <p>Famous National Geographic portrait by Steve McCurry.</p>
+     <a href="afghan-girl.html">View Photo</a>
+    </div>
+
+  <!-- DIGITAL ART -->
+  <h3 style="margin-top: 60px; font-size: 28px;">💻 Digital Art</h3>
+  <div class="artwork-grid">
+    <div class="artwork-box">
+      <img src="images/cyberdream.jpg" alt="Cyberdream">
+      <h3>Cyberdream</h3>
+      <p>Futuristic cityscape created with digital tools.</p>
+      <a href="cyberdream.html">View Digital Art</a>
+    </div>
+    <div class="artwork-box">
+      <img src="images/glitch-girl.jpg" alt="Glitch Girl">
+      <h3>Glitch Girl</h3>
+      <p>Modern pixel-art inspired portrait.</p>
+      <a href="glitch-girl.html">View Digital Art</a>
+    </div>
+    <div class="artwork-box">
+      <img src="images/neon-tokyo.jpg" alt="Neon Tokyo">
+     <h3>Neon Tokyo</h3>
+     <p>Vibrant cityscape inspired by cyberpunk Japan.</p>
+     <a href="neon-tokyo.html">View Digital Art</a>
+   </div>
+
+<div style="background-color:#fff; border-radius:15px; padding:20px; width:90%; margin:auto; margin-top:40px; box-shadow:0 5px 15px rgba(0,0,0,0.1); font-family:'Georgia', serif;">
+  <h3 style="text-align:center; color:#8b1e3f; margin-bottom:15px;">🔗 Explore External Art Sites</h3>
+  <div style="display:flex; justify-content:space-around; flex-wrap:wrap; gap:10px;">
+
+    <a href="https://www.artspace.com" target="_blank" style="text-decoration:none; color:#8b1e3f; background:#f0e6e9; padding:10px 15px; border-radius:10px;">artspace.com</a>
+
+    <a href="https://www.theartstory.org" target="_blank" style="text-decoration:none; color:#8b1e3f; background:#f0e6e9; padding:10px 15px; border-radius:10px;">theartstory.org</a>
+
+    <a href="https://www.behance.net" target="_blank" style="text-decoration:none; color:#8b1e3f; background:#f0e6e9; padding:10px 15px; border-radius:10px;">behance.net</a>
+
+    <a href="https://www.metmuseum.org" target="_blank" style="text-decoration:none; color:#8b1e3f; background:#f0e6e9; padding:10px 15px; border-radius:10px;">The Met Museum</a>
+
+  </div>
+</div>
+
+<footer>
+  <p>Website created: <strong>April 2025</strong> | Last updated: <strong>24 May 2025</strong></p>
+  &copy; 2025 Nor Fatihah Binti Eshad. All rights reserved.
+</footer>
+
+</body>
+</html>
+
